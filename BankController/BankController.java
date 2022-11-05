@@ -19,7 +19,7 @@ public class BankController {
 
 	@Autowired
 	BankService bSer;
-	@PostMapping("/addBank")
+	@PostMapping("/addBankList")
 	public String addBank(@RequestBody List<Bank> bnk) {
 		return bSer.addBank(bnk);
 	}
